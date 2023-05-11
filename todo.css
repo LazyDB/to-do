@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3e3e3;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+
+#add-todo {
+  margin-left: 30%;
+  padding-top: 45px;
+}
+
+.new-list {
+  margin-top: 1em;
+  padding: 0.8em;
+  border: none;
+  border-radius: 0.5em;
+  width: 50%;
+  background-color: rgb(240, 240, 240);
+  font-size: 1em;
+}
+
+/* styling the add todo button */
+.btn-list {
+  margin-top: 1em;
+  padding: 0.8em;
+  border: none;
+  background-color: #0043aee8;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  margin-left: 10px;
+}
+
+
+.dropdown {
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.dropdown select{
+  background-color: #EFECEC;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*.dropdown-button {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #e3e3e3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ */
+
+table {
+  width: 60%;
+  margin-left: 20px;
+  border-collapse: collapse;
+}
+
+table th {
+  background-color: #EFECEC;
+  font-size: 15px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 30px;
+  align-items: center;
+}
+
+table td {
+  background-color: white;
+  font-size: 15px;
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+.Overall-status {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 39px;
+  align-items: start;
+  margin-left: 70%;
+  margin-top: 0%;
+  position: fixed;
+  top: 300px;
+  left: 0;
+  right: 30px;
+  z-index: 999;
+}
+
+.Overall-status i{
+  padding-left: 25px;
+  padding-right: 10px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
+    <title>To-Do List</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>TODO MANAGER</h2>
+        <div class="date"></div>
+    </header>
+
+    <section id="add-todo">
+        <div class="add-todo">
+            <form class="todo-form" onsubmit="clearAsync()">
+                <input type="text" class="new-list" placeholder="Buy grocery from market" aria-label="new list name">
+                <button type="submit" class="btn-list" aria-label="Create new list"> ADD TODO</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="container-table-status">
+        <section id="todo-table">
+
+            <!-- <div class="dropdown">
+                <button class="dropdown-button">3 items selected:</button>
+                <div class="dropdown-content">
+                    <a href="#" class="dropdown-item1" value="In Progress">Done</a>
+                    <a href="#" class="dropdown-item2" value="Done">In Progress</a>
+                    <a href="#" class="dropdown-item3" value="Cancelled">Cancelled</a>
+                </div>
+            </div> -->
+
+            <div class="dropdown">
+
+                <select name="item-selected" id="item-selected">
+                    <option disabled selected>Select</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Done">Done</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+            </div>
+
+
+            <div class="items">
+                <table>
+                    <tr>
+                        <th><input type="checkbox" id="select-all"><label for="id">id</label></th>
+                        <th>Todo</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                    <tbody id="todo-list">
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+
+
+        <div class="Overall-status">
+            <div class="overallbar" style="margin-left: 70px;"><b>Overall Status</b> </div>
+            <ul class="listoverall" style="list-style-type: none;">
+                <li> <i class="fa-regular fa-circle-check"
+                        style="font-size:20px;color:#1C2CBF; font-weight:500; padding: top 5px;"></i>
+                    Done (8)
+                </li>
+
+                <li> <i class="fa-solid fa-spinner fa-xl"></i>In Progress (8)</li>
+
+                <li> <i class="fa-solid fa-circle-xmark"
+                        style="font-size:20px; color: #FA0909; font-weight:500; "></i>Cancelled (8)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let now = new Date();
+        let formattedDate = now.toDateString();
+        document.getElementsByClassName("date")[0].innerHTML = formattedDate;
+
+        
+
+    </script>
+
+    <script src="index.js" type="module"></script>
+    <!-- <script>
+        function clearInput() {
+            document.getElementById("myInput").value = "";
+        }
+    </script> -->
+</body>
+
+</html>
