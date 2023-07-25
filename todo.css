@@ -2,7 +2,6 @@
   box-sizing: border-box;
   font-family: Tahoma, sans-serif;
   margin: 0px;
-  margin-left: auto;
 }
 
 header {
@@ -14,7 +13,6 @@ header {
   padding-right: 10%;
   padding-top: 1.5%;
   padding-bottom: 1.5%;
-  margin: auto;
 }
 
 #add-todo {
